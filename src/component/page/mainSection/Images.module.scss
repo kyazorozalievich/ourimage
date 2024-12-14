@@ -53,11 +53,12 @@
   .Images {
     .content {
       .cards {
-        gap: 20px;
+        justify-content: space-between;
+        gap: 10px;
         .todoItem {
           img {
-            width: 110px;
-            height: 150px;
+            width: 130px;
+            height: 180px;
           }
         }
       }
