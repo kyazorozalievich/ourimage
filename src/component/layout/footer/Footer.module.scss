@@ -1,0 +1,25 @@
+.Footer {
+  margin-top: 50px;
+  width: 100%;
+  height: 200px;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .content {
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      font-family: "Playwrite NL Guides", cursive;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: red;
+      text-shadow: 5px 5px 10px red;
+    }
+  }
+}

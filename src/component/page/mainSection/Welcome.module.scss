@@ -1,0 +1,134 @@
+.Welcome {
+  background-image: url("https://i.pinimg.com/736x/6f/bc/2f/6fbc2f183d2ebc4b713271967f24144b.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  margin-bottom: 50px;
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.411);
+    display: flex;
+    align-items: center;
+    .content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: white;
+      z-index: 20;
+      gap: 10px;
+      h1 {
+        color: white;
+        width: 400px;
+        font-weight: 400;
+        text-shadow: 5px 5px 10px white;
+        text-align: center;
+        font-family: "Playwrite NL Guides", cursive;
+      }
+      form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        .fileButton {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: rgba(255, 255, 255, 0.416);
+          color: white;
+          height: 100px;
+          width: 250px;
+          cursor: pointer;
+          border-radius: 5px;
+          font-size: 15px;
+          border: 2px solid white;
+          transition: background-color 0.3s;
+          gap: 5px;
+          font-weight: 600;
+          &:hover {
+            transition: 0.5s;
+            transform: scale(1.02);
+            background: rgba(5, 180, 249, 0.418);
+          }
+        }
+        input {
+          display: none;
+        }
+        button {
+          width: 250px;
+          height: 30px;
+          background: rgb(0, 119, 255);
+          border: none;
+          border-radius: 5px;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 600;
+          gap: 10px;
+        }
+      }
+      p {
+        text-align: center;
+        font-size: 12px;
+        width: 500px;
+        text-shadow: 5px 5px 10px white;
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+}
+@media (max-width: 431px) {
+  .Welcome {
+    .bg {
+      .content {
+        p {
+          width: 400px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 321px) {
+  .Welcome {
+    height: 300px;
+    .bg {
+      .content {
+        h1 {
+          width: 200px;
+          font-size: 15px;
+        }
+        form {
+          .fileButton {
+            width: 150px;
+            height: 50px;
+            font-size: 12px;
+          }
+          button {
+            width: 150px;
+            height: 30px;
+            font-size: 12px;
+          }
+        }
+        p {
+          width: 300px;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
